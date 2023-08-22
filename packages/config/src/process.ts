@@ -653,6 +653,8 @@ export async function processConfig(
         getPersistedOperation(key) {
           return documentHashMap[key];
         },
+        skipDocumentValidation: true,
+        allowArbitraryOperations: true,
       }))`);
     }
   }
